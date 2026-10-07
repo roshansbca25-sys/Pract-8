@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+
+<title>Student Registration</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="script.js"></script>
+
+</head>
+
+<body>
+
+<!-- Navigation Bar -->
+
+<nav class="navbar">
+
+<div class="logo">
+Student Portal
+</div>
+
+<div class="nav-links">
+
+<a href="#">Home</a>
+
+<a href="#">Students</a>
+
+<a href="#">About</a>
+
+<a href="#">Contact</a>
+
+</div>
+
+</nav>
+
+
+<!-- Main Container -->
+
+<div class="main-container">
+
+<div class="form-card">
+
+<h1>Student Registration</h1>
+
+<p class="subtitle">
+Enter student details to save the information
+</p>
+
+
+<form action="process.php"
+method="POST"
+onsubmit="return validateForm()">
+
+
+<!-- Roll Number -->
+
+<label for="roll_no">
+Roll Number
+</label>
+
+<input type="number"
+id="roll_no"
+name="Roll_No"
+placeholder="Enter Roll Number">
+
+
+<!-- Name -->
+
+<label for="name">
+Student Name
+</label>
+
+<input type="text"
+id="name"
+name="Name"
+placeholder="Enter Student Name">
+
+
+<!-- Gender -->
+
+<label>
+Gender
+</label>
+
+<div class="gender">
+
+<label class="radio-label">
+
+<input type="radio"
+name="Gender"
+value="Male">
+
+Male
+
+</label>
+
+
+<label class="radio-label">
+
+<input type="radio"
+name="Gender"
+value="Female">
+
+Female
+
+</label>
+
+
+<label class="radio-label">
+
+<input type="radio"
+name="Gender"
+value="Other">
+
+Other
+
+</label>
+
+</div>
+
+
+<!-- Contact Number -->
+
+<label for="contact">
+Contact Number
+</label>
+
+<input type="text"
+id="contact"
+name="Contact"
+placeholder="Enter 10 digit contact number">
+
+
+<!-- Marks -->
+
+<label for="marks">
+Marks
+</label>
+
+<input type="number"
+id="marks"
+name="Marks"
+placeholder="Enter Marks (0-100)"
+min="0"
+max="100">
+
+
+<!-- Submit Button -->
+
+<button type="submit">
+
+Save Student Data
+
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
